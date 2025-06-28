@@ -182,27 +182,17 @@
             <!-- Garis Kuning -->
             <div class="h-1 bg-yellow-400 w-100 mx-auto mt-1 mb-6"></div>
 
+            <!-- Galeri Dinamis -->
             <div class="columns-2 md:columns-4 gap-4 px-4 space-y-4 max-w-6xl mx-auto">
-                <img class="w-full max-w-full rounded-lg" src="/image/18.jpg" alt="1" />
-                <img class="w-full max-w-full rounded-lg" src="/image/17.jpg" alt="2" />
-                <img class="w-full max-w-full rounded-lg" src="/image/3.jpg" alt="3" />
-                <img class="w-full max-w-full rounded-lg" src="/image/4.jpg" alt="4" />
-                <img class="w-full max-w-full rounded-lg" src="/image/5.jpg" alt="5" />
-                <img class="w-full max-w-full rounded-lg" src="/image/6.jpg" alt="6" />
-                <img class="w-full max-w-full rounded-lg" src="/image/3.jpg" alt="7" />
-                <img class="w-full max-w-full rounded-lg" src="/image/8.jpg" alt="8" />
-                <img class="w-full max-w-full rounded-lg" src="/image/13.jpg" alt="9" />
-                <img class="w-full max-w-full rounded-lg" src="/image/12.jpg" alt="10" />
-                <img class="w-full max-w-full rounded-lg" src="/image/11.jpg" alt="11" />
-                <img class="w-full max-w-full rounded-lg" src="/image/12.jpg" alt="12" />
-                <img class="w-full max-w-full rounded-lg" src="/image/13.jpg" alt="13" />
-                <img class="w-full max-w-full rounded-lg" src="/image/14.jpg" alt="14" />
-                <img class="w-full max-w-full rounded-lg" src="/image/15.jpg" alt="15" />
-                <img class="w-full max-w-full rounded-lg" src="/image/12.jpg" alt="16" />
-                <img class="w-full max-w-full rounded-lg" src="/image/15.jpg" alt="17" />
+                @foreach ($kamars as $kamar)
+                    <img class="w-full max-w-full rounded-lg" src="{{ asset('storage/' . $kamar->gambar) }}"
+                        alt="{{ $kamar->judul }}" />
+                @endforeach
             </div>
+
             <div class="h-1 bg-yellow-400 w-300 mx-auto mt-3 mb-6"></div>
         </section>
+
 
         <!-- Kenapa Memilih Section -->
         <section class="bg-[#2b1f1a] text-white py-16 px-4 text-center">
