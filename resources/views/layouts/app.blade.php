@@ -5,7 +5,8 @@
     <title>Dashboard - AdaKamar</title>
     @vite('resources/css/app.css') {{-- Tailwind --}}
 </head>
-<body class="bg-black text-white min-h-screen flex">
+<body class="bg-purple-200 text-purple-900 min-h-screen flex">
+
     
     {{-- Sidebar --}}
     @include('layouts.sidebar')

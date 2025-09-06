@@ -1,4 +1,4 @@
-<div class="bg-gray-800 rounded-xl p-6 shadow col-span-3">
+<div class="bg-purple-300 rounded-xl p-6 shadow col-span-3">
     <h3 class="text-lg font-semibold mb-4">Daftar Member</h3>
     <table class="w-full text-left">
         <thead>
