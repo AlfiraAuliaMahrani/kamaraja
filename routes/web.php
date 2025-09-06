@@ -5,6 +5,7 @@ use App\Http\Controllers\HomeController;
 use App\Http\Controllers\ProdukController;
 use App\Http\Controllers\PostController;
 use App\Http\Controllers\KamarController;
+use App\Http\Controllers\DashboardController;   
 
 /*
 |--------------------------------------------------------------------------
@@ -47,4 +48,5 @@ Route::get('/kamar/{kamar}', [KamarController::class, 'show'])->name('kamar.show
 Route::get('/kamar/{kamar}/edit', [KamarController::class, 'edit'])->name('kamar.edit');
 Route::put('/kamar/{kamar}', [KamarController::class, 'update'])->name('kamar.update');
 Route::delete('/kamar/{kamar}', [KamarController::class, 'destroy'])->name('kamar.destroy');
+Route::get('/dashboard', [DashboardController::class, 'index'])->name('dashboard');
 
